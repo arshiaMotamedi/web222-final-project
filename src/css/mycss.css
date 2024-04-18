@@ -1,0 +1,111 @@
+body {
+  background-color: black;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 95%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+header,
+.infographic,
+.education,
+.contact-form,
+.projects {
+  margin-bottom: 50px;
+}
+
+header {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+header img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.links a {
+  margin: 0 10px;
+}
+
+.infographic,
+.education,
+.contact-form,
+.projects {
+  background-color: #f8ef02;
+  padding: 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #555;
+}
+
+@media only screen and (max-width: 400px) {
+  header img {
+    width: 100px;
+  }
+
+  .links {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    width: 100%;
+  }
+}
+
+/* Existing CSS styles */
+
+.buttons {
+  margin-top: 20px;
+}
+
+.resume-button,
+.contact-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: black;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.resume-button:hover,
+.contact-button:hover {
+  background-color: #555;
+}
